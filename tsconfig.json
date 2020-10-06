@@ -26,7 +26,7 @@
     "isolatedModules": true,
     "target": "ES6",
     "jsx": "react",
-    "noEmit": false
+    "noEmit": true
   },
   "exclude": [
     "build",
