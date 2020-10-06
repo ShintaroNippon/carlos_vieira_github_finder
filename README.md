@@ -1,3 +1,10 @@
+## Firstly in tsconfig.json always
+
+```
+noEmit: false
+```
+
+
 ## Installation
 
 ```
