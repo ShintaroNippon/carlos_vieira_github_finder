@@ -32,6 +32,13 @@ button:focus {
   width: 150px;
 }
 
+.zero-found {
+  background: url('../public/zero.svg') center center;
+  background-size: 100px 100px;
+  height: 100px;
+  width: 100px;
+}
+
 .text-center {
   text-align: center;
 }
