@@ -32,9 +32,9 @@ export class AppContainers extends Component<any, State> {
     };
   }
 
-  handleChange = (event: { target: { value: any; }; }) => {
+  handleChange = (event: { target: { value: any } }) => {
     this.setState({ name: event.target.value });
-  }
+  };
 
   handleSubmit = async (event) => {
     event.preventDefault();
@@ -46,34 +46,37 @@ export class AppContainers extends Component<any, State> {
       const results = {
         users: searching[1],
         companies: searching[0]
-      }
+      };
       this.props.addUsersAndCompanies(results);
       this.setState({ results, show: true, loader: false });
     } else {
-      this.setState({ show: false })
+      this.setState({ show: false });
     }
   };
 
   render() {
     return (
       <div>
-        {this.state.loader ? (<div className="loader"></div>) :
-          (<div className="container">
+        {this.state.loader ? (
+          <div className="loader"></div>
+        ) : (
+          <div className="container">
             <div className="row">
               <div className="col-xs-12 col-md-8 offset-md-2">
                 <Header />
                 <Search handleChange={this.handleChange} handleSubmit={this.handleSubmit} title={this.state.name} />
-                {!this.state.show ? (<Searching />) : (<Results users={this.state.results.users} companies={this.state.results.companies} />)}
+                {!this.state.show ? (
+                  <Searching />
+                ) : (
+                  <Results users={this.state.results.users} companies={this.state.results.companies} />
+                )}
               </div>
             </div>
-          </div>)
-        }
+          </div>
+        )}
       </div>
     );
   }
-};
+}
 
-export const App = connect(
-  null,
-  mapDispatchToProps
-)(AppContainers);
+export const App = connect(null, mapDispatchToProps)(AppContainers);

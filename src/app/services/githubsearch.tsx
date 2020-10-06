@@ -18,7 +18,10 @@ class GitHubSearch {
   }
 
   async getUsersAndRepositories(name) {
-    const result = await Promise.all([this.getRepositoriesOrUsersByName('repositories', name),this.getRepositoriesOrUsersByName('users', name)]);
+    const result = await Promise.all([
+      this.getRepositoriesOrUsersByName('repositories', name),
+      this.getRepositoriesOrUsersByName('users', name)
+    ]);
 
     return result;
   }

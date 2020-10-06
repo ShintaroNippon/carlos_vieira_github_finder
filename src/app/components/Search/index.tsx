@@ -1,7 +1,6 @@
 import React from 'react';
 
-export const Search = ({handleSubmit, handleChange, title}: any): JSX.Element => {
-
+export const Search = ({ handleSubmit, handleChange, title }: any): JSX.Element => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
