@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Counts } from '../Counts/index';
 import { TypeCard } from '../TypeCard/index';
+import { ZeroFound } from '../ZeroFound/index';
 
 export interface PropsResults {
   users: any;
@@ -10,13 +11,13 @@ export interface PropsResults {
 export const Results = (props: PropsResults): JSX.Element => {
   const [userMore, setUserMore] = useState(5);
   const [companyMore, setCompanyMore] = useState(5);
-  let companiesItems = 'empty';
+  let companiesItems = <ZeroFound />;
   if (props.companies.items && props.companies.items.length > 0) {
     companiesItems = props.companies.items.slice(0, companyMore).map((item) => {
       return <TypeCard type="company" item={item} key={item.id} />;
     });
   }
-  let userItems = 'empty';
+  let userItems = <ZeroFound />;
   if (props.users.items && props.users.items.length > 0) {
     userItems = props.users.items.slice(0, userMore).map((item) => {
       return <TypeCard type="user" item={item} key={item.id} />;
