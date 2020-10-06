@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the component 1`] = `
+<div
+  className="col-md-12"
+>
+  <div
+    className="card ptb10 border-top"
+  >
+    <div
+      className="card-horizontal"
+    >
+      <div
+        className="img-square-wrapper"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-2"
+          >
+            <img
+              alt="Card image cap"
+              className="round"
+              src="http://via.placeholder.com/300x180"
+            />
+          </div>
+          <div
+            className="col-md-5"
+          >
+            <span
+              className="card-title font-12 bold"
+            >
+              carlos
+            </span>
+          </div>
+          <div
+            className="col-md-5 text-right"
+          >
+            <span
+              className="card-title font-12 mtr10"
+            >
+              1
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the component 1`] = `
+<div
+  className="col-md-12"
+>
+  <div
+    className="border-bottom-counts"
+  >
+    <span>
+      USERS
+    </span>
+    <span>
+        (
+      10
+      )
+    </span>
+  </div>
+  <div
+    className="row"
+  >
+    <div
+      className="col-md-6 mt10"
+    >
+      <span>
+        USER
+      </span>
+    </div>
+    <div
+      className="col-md-6 mt10 txt-right"
+    >
+      <span>
+        CONTRIBUTIONS
+      </span>
+    </div>
+  </div>
+</div>
+`;

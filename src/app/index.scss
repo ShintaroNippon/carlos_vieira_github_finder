@@ -1,0 +1,111 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+.search-text {
+  height: 50px;
+}
+
+.search-button {
+  background: url('../public/search.svg') center center;
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 15px;
+  border: 0;
+  top: 111px;
+  z-index: 999;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.border-bottom-counts {
+  border-bottom: 2px solid black;
+}
+
+.searching {
+  background: url('../public/search.svg') center center;
+  background-size: 150px 150px;
+  height: 150px;
+  width: 150px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.round {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mtr10 {
+  padding-right: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.ptb10 {
+ padding: 10px 0;
+}
+
+.mt25 {
+  margin-top: 25px;
+}
+
+.border-top {
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.border {
+  border-top: 1px solid #dee2e6;
+}
